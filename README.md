@@ -82,7 +82,7 @@ You will need [Node.js](https://nodejs.org/) installed in your environment. Chec
 1.  Clone the repository:
 
     ```bash
-    git clone github.com
+    git clone git@github.com:ayomideowolana1/tallie-preview-exercise.git
     ```
 
 2.  Navigate to the project directory:

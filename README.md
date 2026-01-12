@@ -1,33 +1,4 @@
-<!--
-APP_NAME=tallie
-BRAND_NAME=tallie
-PORT=3000
-NODE_ENV=development
 
-DB_HOST = 127.0.0.1
-DB_PORT = 3306
-DB_USER = root
-DB_NAME = tallie
-DB_POOL_MIN = 1
-DB_POOL_MAX = 10
-DB_PASSWORD =
-
-REDIS_PORT=6379
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=foobared
-
-
-
-Known limitations
-What you would improve with more time
-
-? Add endpoint to cancel/modify reservations
-? Add reservation status (pending, confirmed, completed, cancelled)
-? Send confirmation (mock email/SMS - just log it)
-
-Write at least 3-5 basic tests for critical endpoints
-
--->
 
 # Tallie Reservation System
 
@@ -133,6 +104,18 @@ You will need [Node.js](https://nodejs.org/) installed in your environment. Chec
     ```bash
     Your .env is missing the following variables: 
     PORT,DB_HOST,DB_PORT,DB_USER,DB_PASSWORD,DB_NAME,DB_POOL_MIN,DB_POOL_MAX 
+    ```
+5. Run the application 
+    ```bash
+        //run development 
+        yarn run dev
+
+        OR
+
+        // run build
+        yarn run start
+
+        
     ```
 
 #
@@ -515,6 +498,6 @@ Add a date query to fetch reservations for the specified date
 - Enable customers or admins to manage existing reservations and  status tracking.
 - Expose analytics endpoints for demand, occupancy, and peak-hour trends.
 - Cache computed availability to reduce repeated overlap calculations and improve response times.
-
 - Implement rate limiting to prevent excessive or automated requests that could degrade system performance.
 - Introduce role-based access control for restaurant administrators.
+- Expadn test suite to cover endpoints
